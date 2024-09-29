@@ -14,3 +14,29 @@ OUPUT:
 Number of amino acids (not including stop codon): 30
 Total bases in the ORF (including stop codon): 93
 ```
+
+## Problem 2: Running Prodigal on a genome to count number of genes
+```bash
+# Load Prodigal
+module load prodigal
+# Run Prodigal to annotate genes
+prodigal -i ecoli.fna -o ecoli.gbk -d ecoli_genes.fna
+# Count the number of annotated genes and save it to gene_count.txt
+grep ">" ecoli_genes.fna -c > gene_count.txt
+```
+OUTPUT: File with the number of genes called "gene_count.txt"
+
+## Problem 3: 
+
+all files are in: /home/quezadgc/ncbi_dataset/data/
+
+```bash
+nano problem3.sh
+chmod +x problem3.sh
+./problem3.sh
+git add problem3.sh
+git commit -m "Solve problem 3"
+```
+OUTPUT: Genome with the highest number of genes: GCA_000006745.1 with 3594 genes
+
+
