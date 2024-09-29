@@ -39,4 +39,12 @@ git commit -m "Solve problem 3"
 ```
 OUTPUT: Genome with the highest number of genes: GCA_000006745.1 with 3594 genes
 
-
+## Problem 4:
+```bash
+module load prokka
+nano run_prokka.sh
+chmod +x run_prokka.sh
+sbatch run_prokka.sh
+```
+OUTPUT: "cds_counts.txt." (CDS counts saved to prokka_output/cds_counts.txt.)
+```
