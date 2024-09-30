@@ -32,13 +32,12 @@ all files are in: /home/quezadgc/ncbi_dataset/data/
 <<<<<<< HEAD
 
 ```bash
-nano problem3.sh
-chmod +x problem3.sh
-./problem3.sh
-git add problem3.sh
-git commit -m "Solve problem 3"
+module load prokka
+nano run_Prodigal.sh
+chmod +x run_Prodigal.sh 
+sbatch run_Prodigal.sh 
 ```
-OUTPUT: Genome with the highest number of genes: GCA_000006745.1 with 3594 genes
+OUTPUT: Genome with the highest number of genes: GCA_000006745.1 with 3594 genes (files: "prodigal_results.txt" and "all_genome_counts_prodigal.txt")
 
 ## Problem 4:
 =======
