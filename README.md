@@ -47,7 +47,8 @@ chmod +x run_prokka.sh
 sbatch run_prokka.sh
 ```
 OUTPUT: "cds_counts.txt." (CDS counts saved to prokka_output/cds_counts.txt.)
-###Discussion: Are the total number of
+
+### Discussion: Are the total number of
 genes the same as they were with prodigal? What are the differences?
 Total Counts:
 Prodigal predicted between 897 to 3594 genes across the genomes.
