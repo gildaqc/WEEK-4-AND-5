@@ -52,7 +52,6 @@ git commit -m "Saving output file probem 4"
 ```
 OUTPUT: "cds_counts.txt" in prokka_output/
 
->>>>>>> 91742d439e4e6b8105fa372a30514e41920115af
 ### Discussion: Are the total number of genes the same as they were with prodigal? What are the differences?
 #### Total Counts
 - Prodigal predicted between **897 to 3594** genes across the genomes.
@@ -62,13 +61,13 @@ OUTPUT: "cds_counts.txt" in prokka_output/
 
 Prokka's counts are generally lower than Prodigal's because Prodigal includes potential genes, which may encompass false positives. In contrast, Prokka focuses on actual coding sequences, resulting in fewer annotations. For example, the genome **GCA_000008525.1** had **1579** genes predicted by Prodigal but only **1577** CDS annotated by Prokka.
 
-<<<<<<< HEAD
-=======
 ## Problem 5
 ``` bash
 cd prokka_output/
 grep -h "ID=" */*.gff | sed 's/.*ID=//; s/;.*//' | sort -u > unique_gene_names.txt
 head -n 5 unique_gene_names.txt
+git add unique_gene_names.txt
+git commit -m "Saving the output file of problem 5"
 ```
 OUTPUT:
 ``` bash
