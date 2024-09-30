@@ -41,7 +41,7 @@ git commit -m "Saving Problem 3 output files"
 ```
 OUTPUT: Genome with the highest number of genes: GCA_000006745.1 with 3594 genes 
 
-SUBMITTED FILES: prodigal_results.txt  and  all_genome_counts_prodigal.txt
+SUBMITTED FILES: run_Prodigal.sh  and  prodigal_results.txt  and  all_genome_counts_prodigal.txt
 
 ## Problem 4: Script to run Prokka on all downloaded genomes
 ```bash
