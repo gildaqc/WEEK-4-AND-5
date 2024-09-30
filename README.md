@@ -9,7 +9,7 @@ git add calculate_peptide.py
 git commit -m "Solve problem 1"
 git push -u origin main
 ```
-OUPUT:
+OUPUT: Saved in "calculate_peptide.py"
 ```bash
 Number of amino acids (not including stop codon): 30
 Total bases in the ORF (including stop codon): 93
