@@ -39,4 +39,21 @@ git commit -m "Solve problem 3"
 ```
 OUTPUT: Genome with the highest number of genes: GCA_000006745.1 with 3594 genes
 
+## Problem 4:
+```bash
+module load prokka
+nano run_prokka.sh
+chmod +x run_prokka.sh
+sbatch run_prokka.sh
+```
+OUTPUT: "cds_counts.txt." (CDS counts saved to prokka_output/cds_counts.txt.)
 
+### Discussion: Are the total number of genes the same as they were with prodigal? What are the differences?
+Total Counts:
+Prodigal predicted between 897 to 3594 genes across the genomes.
+Prokka annotated between 892 to 3589 CDS, showing a slightly lower count.
+
+Differences:
+
+Prokka's counts are generally lower than Prodigal's, as Prodigal includes potential genes, including false positives. Prokka focuses on actual coding sequences, resulting in fewer annotations.
+For example, GCA_000008525.1 had 1579 genes predicted by Prodigal but only 1577 CDS by Prokka.
