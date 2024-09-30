@@ -29,35 +29,26 @@ OUTPUT: File with the number of genes called "gene_count.txt"
 ## Problem 3: 
 
 all files are in: /home/quezadgc/ncbi_dataset/data/
-<<<<<<< HEAD
 
 ```bash
 module load prokka
 nano run_Prodigal.sh
 chmod +x run_Prodigal.sh 
-sbatch run_Prodigal.sh 
+sbatch run_Prodigal.sh
+git add prodigal_results.txt all_genome_counts_prodigal.txt
+git commit -m "Saving Problem 3 output files"
 ```
 OUTPUT: Genome with the highest number of genes: GCA_000006745.1 with 3594 genes (files: "prodigal_results.txt" and "all_genome_counts_prodigal.txt")
 
-## Problem 4:
-=======
->>>>>>> 91742d439e4e6b8105fa372a30514e41920115af
-```bash
-module load prokka
-nano run_Prodigal.sh
-chmod +x run_Prodigal.sh 
-sbatch run_Prodigal.sh 
-```
-OUTPUT: "prodigal_results.txt" and "all_genome_counts_prodigal.txt"
-
-<<<<<<< HEAD
-=======
 ## Problem 4:
 ```bash
 module load prokka
 nano run_prokka.sh 
 chmod +x run_prokka.sh
 sbatch run_prokka.sh
+cd prokka_output
+git add cds_counts.txt
+git commit -m "Saving output file probem 4"
 ```
 OUTPUT: "cds_counts.txt" in prokka_output/
 
