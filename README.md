@@ -1,5 +1,6 @@
 # WEEK 4-5
-## Problem 1: Count number of amino acids and bases in ORF of the DNA sequence encoding the given amino acid sequence
+## Problem 1: Count the number of amino acids in the encoded peptide and bases contained in the ORF of the DNA sequence encoding given an amino acid sequence ( KVRMFTSELDIMLSVNGPADQIKYFCRHWT*)
+
 ```bash
 mkdir Week5
 nano calculate_peptide.py
