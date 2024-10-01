@@ -13,7 +13,7 @@ ALL_COUNTS_FILE="/home/quezadgc/Week5/all_genome_counts_prodigal.txt"
 
 MAX_GENES=0
 MAX_GENOME=""
-chmod +x .shchmod +x Prodigal_Problem3.sh
+
 for genome in $(find /home/quezadgc/ncbi_dataset/data/  -type f -name "*GCA*.fna"); do
 
     prodigal -i "$genome" -d "$OUTPUT_FILE"
