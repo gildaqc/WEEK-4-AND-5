@@ -16,7 +16,7 @@ MAX_GENOME=""
 
 for genome in $(find /home/quezadgc/ncbi_dataset/data/  -type f -name "*GCA*.fna"); do
 
-    prodigal -i "$genome" -d "$OUTPUT_FILE"
+    prodigal -i "$genome" -d "$OUTPUT_FILE" # runs Prodigal to predict genes from the input genome
     gene_count=$(grep ">" -c "$OUTPUT_FILE")
     echo "$genome: $gene_count" >> "$ALL_COUNTS_FILE"
 
