@@ -66,11 +66,9 @@ SUBMITTED FILES: run_prokka.sh and cds_counts.txt
 Prokka's counts are generally lower than Prodigal's because Prodigal includes potential genes, which may encompass false positives. In contrast, Prokka focuses on actual coding sequences, resulting in fewer annotations. For example, the genome **GCA_000008525.1** had **1579** genes predicted by Prodigal but only **1577** CDS annotated by Prokka.
 
 ## Problem 5: Extract and list all unique gene names annotated by Prokka using shell commands
-
+Search for "ID=" in all .gff files, extract gene IDs (removing prefix and suffix), sort uniquely, and save to unique_gene_names.txt 
 ``` bash
 cd prokka_output/
-
-# Search for "ID=" in all .gff files, extract gene IDs (removing prefix and suffix), sort uniquely, and save to unique_gene_names.txt
 grep -h "ID=" */*.gff | sed 's/.*ID=//; s/;.*//' | sort -u > unique_gene_names.txt
 
 # Display the first 5 lines of the unique gene names file
