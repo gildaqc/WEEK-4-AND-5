@@ -2,13 +2,13 @@
 
 def main():
     # Given amino acid sequence
-    amino_acid_sequence = "KVRMFTSELDIMLSVNG-PADQIKYFCRHWT*"
+    amino_acid_sequence = "KVRMFTSELDIMLSVNGPADQIKYFCRHWT*"
 
     # Remove the stop codon
     cleaned_sequence = amino_acid_sequence.replace("*", "")
     
     # Count the amino acids
-    num_amino_acids = len(cleaned_sequence.replace("-", ""))  # Ignore any gaps (if present)
+    num_amino_acids = len(cleaned_sequence) 
     
     # Calculate the total bases in the ORF (including the stop codon)
     total_bases = (num_amino_acids + 1) * 3  # +1 for the stop codon
