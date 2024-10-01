@@ -28,7 +28,8 @@ grep ">" ecoli_genes.fna -c > gene_count.txt
 ```
 SUBMITTED FILES: gene_count.txt (4161)
 
-## Problem 3: Script to run Prodigal on all downloaded genomes
+## Problem 3: Script to run Prodigal on all downloaded genomes and find which genome has the highest
+number of genes
 
 All files are in: /home/quezadgc/ncbi_dataset/data/
 
