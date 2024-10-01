@@ -69,7 +69,11 @@ Prokka's counts are generally lower than Prodigal's because Prodigal includes po
 
 ``` bash
 cd prokka_output/
+
+# Search for "ID=" in all .gff files, extract gene IDs (removing prefix and suffix), sort uniquely, and save to unique_gene_names.txt
 grep -h "ID=" */*.gff | sed 's/.*ID=//; s/;.*//' | sort -u > unique_gene_names.txt
+
+# Display the first 5 lines of the unique gene names file
 head -n 5 unique_gene_names.txt
 git add unique_gene_names.txt
 git commit -m "Saving the output file of problem 5"
