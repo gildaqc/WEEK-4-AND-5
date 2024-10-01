@@ -28,15 +28,15 @@ grep ">" ecoli_genes.fna -c > gene_count.txt
 ```
 SUBMITTED FILES: gene_count.txt (4161)
 
-## Problem 3: Script to run Prodigal on all downloaded genomes - Prodigal.sh
+## Problem 3: Script to run Prodigal on all downloaded genomes
 
 All files are in: /home/quezadgc/ncbi_dataset/data/
 
 ```bash
 module load prokka
 nano run_Prodigal.sh
-chmod +x run_Prodigal.sh 
-sbatch run_Prodigal.sh
+chmod +x run_Prodigal.sh # Add executable permissions to the file
+sbatch run_Prodigal.sh 
 git add prodigal_results.txt all_genome_counts_prodigal.txt
 git commit -m "Saving Problem 3 output files"
 ```
